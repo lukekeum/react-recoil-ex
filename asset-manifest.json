@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-recoil-ex/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/react-recoil-ex/static/js/main.9d35aefe.chunk.js",
-    "main.js.map": "/react-recoil-ex/static/js/main.9d35aefe.chunk.js.map",
+    "main.js": "/react-recoil-ex/static/js/main.d021e0e7.chunk.js",
+    "main.js.map": "/react-recoil-ex/static/js/main.d021e0e7.chunk.js.map",
     "runtime-main.js": "/react-recoil-ex/static/js/runtime-main.4bfdca4a.js",
     "runtime-main.js.map": "/react-recoil-ex/static/js/runtime-main.4bfdca4a.js.map",
     "static/js/2.14d787ce.chunk.js": "/react-recoil-ex/static/js/2.14d787ce.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4bfdca4a.js",
     "static/js/2.14d787ce.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.9d35aefe.chunk.js"
+    "static/js/main.d021e0e7.chunk.js"
   ]
 }
