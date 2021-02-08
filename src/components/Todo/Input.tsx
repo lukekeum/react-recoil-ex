@@ -1,10 +1,12 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { css } from '@emotion/react';
 import { useSetRecoilState } from 'recoil';
 import { TodoData } from '../../atom/todo';
 
 export default function Input() {
   const [inputValue, setInputValue] = useState('');
+  const InputRef = useRef<HTMLInputElement>(null);
+
   const setTodoList = useSetRecoilState(TodoData);
 
   const onClickButton = useCallback(
@@ -21,8 +23,10 @@ export default function Input() {
           },
         ];
       });
+      setInputValue('');
+      InputRef.current?.focus();
     },
-    [setTodoList, inputValue]
+    [setTodoList, inputValue, setInputValue]
   );
 
   const onInputChange = useCallback(
@@ -40,6 +44,7 @@ export default function Input() {
         placeholder='Write what to do'
         value={inputValue}
         onChange={onInputChange}
+        ref={InputRef}
       />
       <button css={ButtonStyle} onClick={onClickButton}>
         +
