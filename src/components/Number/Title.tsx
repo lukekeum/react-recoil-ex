@@ -1,3 +1,8 @@
+import { useRecoilState } from 'recoil';
+import { NumberData } from '../../atom/number';
+
 export default function Title() {
-  return <h1>Number here</h1>;
+  const [number] = useRecoilState(NumberData);
+
+  return <h1>Number: {number.current_num}</h1>;
 }
